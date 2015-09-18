@@ -1,0 +1,52 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+%\usepackage{ntheorem}
+\usepackage{amsthm}
+\usepackage[english]{babel}
+
+\newtheorem{theorem}{Theorem}[section]
+%\newtheorem{proof}{Proof}
+\renewcommand\qedsymbol{$\blacksquare$}
+
+\title{Test-Article}
+\author{chuyendungdangki }
+\date{August 2015}
+
+\begin{document}
+
+\maketitle
+\noindent
+\parindent0pt
+
+\section{Introduction}
+Let $(\mathcal{H}_1,m_1,1_{\mathcal{H}_1},\Delta_1,\epsilon_1,S_1)$ and $(\mathcal{H}_2,m_2,1_{\mathcal{H}_2},\Delta_2,\epsilon_2,S_2)$ be Hopf algebras.
+
+Denote that $\tau_{23} (a\otimes b \otimes c \otimes d) = a\otimes c \otimes b \otimes d$. 
+
+Then, one denotes that
+\begin{itemize}
+\item $m = (m_1 \otimes m_2)\circ \tau_{23}$;
+\item $\Delta = \tau_{23}\circ (\Delta_1 \otimes \Delta_2)$.
+\end{itemize}
+
+Taking the tensor product $\mathcal{H}_1 \otimes \mathcal{H}_2$, one can prove that
+\begin{itemize}
+\item[1]  $(\mathcal{H}_1 \otimes \mathcal{H}_2,(m_1\otimes m_2)\circ \tau_{23},1_{\mathcal{H}_1} \otimes 1_{\mathcal{H}_2}$ is an algebra;
+\item[2] $(\mathcal{H}_1 \otimes \mathcal{H}_2,\tau_{23} \circ (\Delta_1 \otimes \Delta_2),\epsilon_1 \otimes \epsilon_2)$ is a cogebra.
+\end{itemize}
+
+{\bf Question:} $\mathcal{H}_1 \otimes \mathcal{H}_2$ is a Hopf algebra.
+
+\begin{theorem}
+$\mathcal{H}_1 \otimes \mathcal{H}_2$ is a bialgebra.
+\end{theorem}
+
+\begin{proof}
+One prove that $\Delta = \tau_{23} \circ (\Delta_1 \otimes \Delta_2)$ is an algebra morphism from $\mathcal{H}_1 \otimes \mathcal{H}_2$ to itself. It means that
+
+\begin{equation}
+\Delta \circ m = m \circ (\Delta\otimes \Delta).
+\end{equation}
+\end{proof}
+
+\end{document}
